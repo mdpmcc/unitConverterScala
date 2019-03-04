@@ -12,6 +12,10 @@ case class Centimeter() extends Unit{
   val name = "cm"
   val base = 100d
 }
+case class Milimeter() extends Unit{
+  val name = "mm"
+  val base = 1000d
+}
 
 case class Inch() extends Unit{
   val name = "in"
@@ -27,3 +31,5 @@ case class Yard() extends Unit{
   val name = "yd"
   val base =1.0936132983377
 }
+
+

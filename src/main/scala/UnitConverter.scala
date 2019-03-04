@@ -1,7 +1,7 @@
 import scala.collection.mutable.StringBuilder
 
 object UnitConverter {
-  private val unitList = Map[String, Unit]("m"-> new Meter, "cm"-> new Centimeter, "in" -> new Inch, "ft" -> new Feet, "yd"-> new Yard)
+  private val unitList = Map[String, Unit]("m"-> new Meter, "cm"-> new Centimeter,"mm" -> new Milimeter, "in" -> new Inch, "ft" -> new Feet, "yd"-> new Yard)
   def convert(input : String):String = {
     val inputs = parse(input)
     convert(inputs._1, unitList(inputs._2), unitList(inputs._3))

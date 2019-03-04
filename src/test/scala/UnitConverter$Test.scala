@@ -7,6 +7,9 @@ class UnitConverter$Test extends FunSuite {
 
     val actual1 = UnitConverter.convert("1000 cm in ft")
     assert(actual1=="1000 cm equals 32.808398950131 ft")
+ 
+    val actual3 = UnitConverter.convert("100 mm in m")
+    assert(actual=="100 mm equals 0.1 m")
   }
 
   test("Testing inner converter function, valid input"){
